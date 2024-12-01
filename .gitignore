@@ -1,0 +1,11 @@
+# vs code
+.vscode/
+
+#cache
+*.pyc
+__pycache__/*
+
+*.Identifier
+
+# data
+data/output/

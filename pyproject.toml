@@ -1,0 +1,20 @@
+[project]
+name = "vessel_optimizer_poc"
+version = "0.1.0"
+description = "Create an optimization solution for Capacitated Vehicle Routing Problem with Time Windows (CVRPWT) using ortool"
+authors = [{name = "Dmitrii Drozdov", email = "mitya.drozdov@gmail.com>"}]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+
+[tool.ruff.lint]
+
+ignore = [
+    "PGH003",       # Use specific rule codes when ignoring type issues
+    "E501",         # Line too long
+    "FBT003",       # Boolean positional value in function call
+    "FBT002",       # Boolean default positional argument in function definition
+    "FBT001",       # Boolean-typed positional argument in function definition
+    "PTH120",       # `os.path.dirname()` should be replaced by `Path.parent`
+    "FA102",        # Missing `from __future__ import annotations` for | in typehints (not needed in python 3.10+)
+]
